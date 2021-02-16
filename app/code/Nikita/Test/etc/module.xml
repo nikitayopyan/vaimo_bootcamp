@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!--
+/**
+* Nikita Test
+*
+* @author Mykyta Yanushevskyi <mykyta.yanushevskyi@vaimo.com>
+* @package Nikita_Test
+* @copyright Copyright (c) 2021 Vaimo (http://www.vaimo.com)
+*/
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="Module/etc/module.xsd">
+    <module name= "Nikita_Test" setup_version="1.0.0"/>
+</config>

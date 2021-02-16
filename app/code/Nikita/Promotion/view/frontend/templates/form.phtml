@@ -1,0 +1,55 @@
+<?php
+/**
+ * @var Nikita\Promotion\Block\View $block
+
+ */
+
+$dolla = 3;
+$refLinkClick = 3;
+$refPending = 0;
+$refApproved = 0;
+?>
+<div class="promotion__wrapper">
+    <div class="promotion__form">
+        <form action="#" name="promotion">
+            <label>
+                Refer a friend using this unique link:
+            </label>
+            <div class="promotion__input">
+                <input type="url" name="referral" placeholder="Referral link">
+                <button type="submit">Copy</button>
+            </div>
+        </form>
+        <div class="promotion__social">
+            <p>
+                Share your unique link on social
+            </p>
+            <div class="promotion__socialmedia">
+                <img src="https://toppng.com/uploads/preview/facebook-icon-white-circle-facebook-logo-11562983298tkkvnplpku.png"/>
+                <img src="https://image.flaticon.com/icons/png/512/60/60580.png"/>
+            </div>
+        </div>
+
+    </div>
+    <div class="promotion__achievements">
+        <div class="promotion__earned">
+            <div class="dollar"><?php echo $dolla; ?> $</div>
+            <div class="earned">Earned</div>
+        </div>
+        <div class="promotion__counter">
+            <p>Your Achievements</p>
+            <div class="clicks">
+                <ul class="clicks__counter">
+                    <li class="click">Referral Link CLicks</li>
+                    <li class="click">Referral Pending</li>
+                    <li class="click">Referral Approved</li>
+                </ul>
+                <ul class="clicks__counter">
+                    <li class="click"><?php echo $refLinkClick; ?></li>
+                    <li class="click"><?php echo $refPending; ?></li>
+                    <li class="click"><?php echo $refApproved; ?></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

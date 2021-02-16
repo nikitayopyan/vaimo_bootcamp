@@ -1,0 +1,34 @@
+<?php
+/**
+ * @var Nikita\Brand\Block\View $block
+
+ */
+?>
+
+<div class="brands">
+    <?php
+    if ($block->getBrandParam()) :?>
+        <?php
+        $someBrand = $block->getBrand(); ?>
+        <h1 style="text-align: center"> <?= $someBrand->getBrandName() ?> </h1>
+        <div class="brand">
+            <img class="brand__logo" src=" <?=  $someBrand->getBrandImagePaths() ?>" alt="logo"/>
+            <div class="brand__descr">
+                <p><?=$someBrand->getBrandDescr() ?></p>
+            </div>
+        </div>
+        <?php else :?>
+            <?php $allBrands = $block->getBrand(); ?>
+            <h1 style="text-align: center"> <?= $block->escapeHtml(__('All available Brands')) ?> </h1>;
+            <div class="brand__wrapper">
+                <?php foreach ($allBrands as $brand) :?>
+                <div class="brand">
+                    <a href=" <?= $block->getUrl('brand/view/view/brandid/' . $brand->getBrandId()) ?>">
+                        <img class="brand__logo" src=" <?= $brand->getBrandImagePaths() ?>" alt="logo"/>
+                    </a>
+                </div>
+                <?php endforeach; ?>
+            </div>
+        <?php endif; ?>
+</div>
+

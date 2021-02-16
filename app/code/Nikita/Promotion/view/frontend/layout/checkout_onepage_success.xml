@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <referenceBlock name="checkout.success" template="Nikita_Promotion::checkout_success.phtml"/>
+            <block
+                class="Nikita\Promotion\Block\View"
+                name="checkout.onepage.promotion.block"
+                template="Nikita_Promotion::checkout.phtml"
+                after="checkout.success">
+            </block>
+        </referenceContainer>
+    </body>
+</page>

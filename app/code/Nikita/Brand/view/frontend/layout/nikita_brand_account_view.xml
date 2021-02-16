@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--
+/**
+*Nikita Test
+*
+* * @author Mykyta Yanushevskyi <mykyta.yanushevskyi@vaimo.com>
+* @package Nikita_Test
+* @copyright Copyright (c) 2021 Vaimo (http://www.vaimo.com)
+*
+/-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <update handle="customer_account"/>
+    <update handle="nikita_brand_view_view"/>
+</page>
