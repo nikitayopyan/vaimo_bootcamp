@@ -7,19 +7,19 @@
 <div class="checkout__promotion">
     <div class="checkout__info">
         <div class="checkout__header">
-            <h4>order details</h4>
+            <h4><?= $block->escapeHtml(__('order details'))?></h4>
         </div>
         <div class="checkout__descr">
-            <p>Your order will be delivered within 1-2 days. Please make sure that you have entered your complete address and correct contact details, as this will reduce any potential delays in your shipment.</p>
+            <p><?= $block->escapeHtml(__('Your order will be delivered within 1-2 days. Please make sure that you have entered your complete address and correct contact details, as this will reduce any potential delays in your shipment.')) ?></p>
         </div>
     </div>
     <a class="checkout__info" href="http://neekeetah.test/promotion/promo/view/">
         <div class="checkout__header">
-            <h4>Invite friends, get rewards!</h4>
+            <h4><?= $block->escapeHtml(__('Invite friends, get rewards!')) ?></h4>
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Ic_chevron_right_48px.svg/768px-Ic_chevron_right_48px.svg.png" alt="goRight"/>
         </div>
         <div class="checkout__descr">
-            <p>100$ Store Credit for you, 100$ Store Credit for your friend. Tell your friends to enter your coupon checkout and they will receive 30% off their first purchase.</p>
+            <p><?= $block->escapeHtml(__('100$ Store Credit for you, 100$ Store Credit for your friend. Tell your friends to enter your coupon checkout and they will receive 30% off their first purchase.')) ?></p>
         </div>
     </a>
 </div>
