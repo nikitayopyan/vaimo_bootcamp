@@ -22,7 +22,6 @@
             <block class="Magento\Cms\Block\Block" name="promotion_block" after="-">
                 <arguments>
                     <argument name="block_id" xsi:type="string">promotion_block</argument>
-                    <argument name="block_class" xsi:type="string">brand__promotion</argument>
                 </arguments>
             </block>
             <block class="Nikita\Promotion\Block\View"
