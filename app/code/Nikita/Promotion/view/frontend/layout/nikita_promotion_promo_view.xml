@@ -19,7 +19,7 @@
     <body>
         <referenceBlock name="page.main.title" remove="true" />
         <referenceContainer name="content">
-            <block class="Magento\Cms\Block\Block" name="promotion_block" template="Nikita_Promotion::promo.phtml" after="-">
+            <block class="Magento\Cms\Block\Block" name="promotion_block" after="-">
                 <arguments>
                     <argument name="block_id" xsi:type="string">promotion_block</argument>
                     <argument name="block_class" xsi:type="string">brand__promotion</argument>
