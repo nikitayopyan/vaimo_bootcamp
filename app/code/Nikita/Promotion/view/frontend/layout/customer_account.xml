@@ -5,15 +5,15 @@
  * See COPYING.txt for license details.
  */
 -->
-<page layout="1column" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
         <referenceBlock name="customer_account_navigation">
             <referenceBlock name="customer-account-navigation-downloadable-products-link" remove="true"/>
-            <block class="Magento\Customer\Block\Account\SortLinkInterface" name="customer-account-navigation-brands-link">
+            <block class="Magento\Customer\Block\Account\SortLinkInterface" name="customer-account-navigation-promotion-link">
                 <arguments>
-                    <argument name="label" xsi:type="string" translate="true">All Brands</argument>
-                    <argument name="path" xsi:type="string">brand/account/view</argument>
-                    <argument name="sortOrder" xsi:type="number">217</argument>
+                    <argument name="label" xsi:type="string" translate="true">Promotion</argument>
+                    <argument name="path" xsi:type="string">promotion/acc/view</argument>
+                    <argument name="sortOrder" xsi:type="number">243</argument>
                 </arguments>
             </block>
         </referenceBlock>
