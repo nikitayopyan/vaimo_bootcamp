@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!--
+/**
+*Nikita Promotion
+*
+* * @author Mykyta Yanushevskyi <mykyta.yanushevskyi@vaimo.com>
+* @package Nikita_Promotion
+* @copyright Copyright (c) 2021 Vaimo (http://www.vaimo.com)
+*
+/-->
+<page layout="1column" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <title>
+            Nikita Promo
+        </title>
+    </head>
+    <body>
+        <referenceBlock name="page.main.title" remove="true" />
+        <referenceContainer name="content">
+            <block class="Magento\Cms\Block\Block" name="promotion_block" after="-">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">promotion_block</argument>
+                </arguments>
+            </block>
+            <block class="Nikita\Promotion\Block\View"
+                   name="promotion_form_block"
+                   template="Nikita_Promotion::form.phtml"
+                   cacheable="true"
+                   after="promotion_block">
+                <arguments>
+                    <argument name="css_class" xsi:type="string">promotion__form</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+    </body>
+</page>

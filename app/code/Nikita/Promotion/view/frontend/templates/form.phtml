@@ -1,0 +1,67 @@
+<?php
+/**
+ * @var Nikita\Promotion\Block\View $block
+
+ */
+
+$dolla = 3;
+$refLinkClick = 3;
+$refPending = 0;
+$refApproved = 0;
+?>
+
+<script type="text/x-magento-init">
+    {
+        "#promo": {
+            "Nikita_Promotion/js/script": {}
+        }
+    }
+</script>
+
+<div class="promotion__wrapper">
+    <div class="promotion__form">
+        <form id="promo" action="#" name="promotion">
+            <label>
+                <?= $block->escapeHtml(__('Refer a friend using this unique link:')) ?>
+            </label>
+            <div class="promotion__input">
+                <input id="promo__input" type="url" name="referral" placeholder="Referral link">
+                <button id="formSubmit" type="button"><?= $block->escapeHtml(__('')) ?>Copy</button>
+            </div>
+        </form>
+        <div class="promotion__social">
+            <p id="share">
+                <?= $block->escapeHtml(__('Share your unique link on social')) ?>
+            </p>
+            <div class="promotion__socialmedia">
+                <img class="socialmedia" src="https://toppng.com/uploads/preview/facebook-icon-white-circle-facebook-logo-11562983298tkkvnplpku.png"/>
+                <img class="socialmedia" src="https://image.flaticon.com/icons/png/512/60/60580.png"/>
+            </div>
+        </div>
+    </div>
+
+    <div class="border"></div>
+    <h3 class="mobile__achievements-header"><?= $block->escapeHtml(__('Your Achievements')) ?></h3>
+
+    <div class="promotion__achievements">
+        <div class="promotion__earned">
+            <div class="dollar"><?= $dolla; ?> $</div>
+            <div class="earned"><?= $block->escapeHtml(__('Earned')) ?></div>
+        </div>
+        <div class="promotion__counter">
+            <p class="promotion__counter-header"><?= $block->escapeHtml(__('Your Achievements')) ?></p>
+            <div class="clicks">
+                <ul class="clicks__counter">
+                    <li class="click"><?= $block->escapeHtml(__('Referral Link CLicks')) ?></li>
+                    <li class="click"><?= $block->escapeHtml(__('Referral Pending')) ?></li>
+                    <li class="click"><?= $block->escapeHtml(__('Referral Approved')) ?></li>
+                </ul>
+                <ul class="clicks__counter">
+                    <li class="click"><?= $refLinkClick; ?></li>
+                    <li class="click"><?= $refPending; ?></li>
+                    <li class="click"><?= $refApproved; ?></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

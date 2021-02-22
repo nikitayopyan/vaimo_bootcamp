@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!--
+/**
+*Nikita Promotion
+*
+* * @author Mykyta Yanushevskyi <mykyta.yanushevskyi@vaimo.com>
+* @package Nikita_Promotion
+* @copyright Copyright (c) 2021 Vaimo (http://www.vaimo.com)
+*
+/-->
+<page layout="1column" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <script src="https://kit.fontawesome.com/6d7e97f348.js"/>
+        <title>
+            Sneakers
+        </title>
+    </head>
+    <body>
+        <referenceBlock name="page.main.title" remove="true" />
+        <referenceContainer name="content">
+            <block class="Nikita\Sneakers\Block\View" name="sneakers_block" template="Nikita_Sneakers::sneakers.phtml"/>
+        </referenceContainer>
+    </body>
+</page>
