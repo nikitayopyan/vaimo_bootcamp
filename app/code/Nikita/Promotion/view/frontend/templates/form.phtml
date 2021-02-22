@@ -9,6 +9,15 @@ $refLinkClick = 3;
 $refPending = 0;
 $refApproved = 0;
 ?>
+
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Nikita_Promotion/js/script": {}
+        }
+    }
+</script>
+
 <div class="promotion__wrapper">
     <div class="promotion__form">
         <form action="#" name="promotion">
@@ -29,15 +38,18 @@ $refApproved = 0;
                 <img src="https://image.flaticon.com/icons/png/512/60/60580.png"/>
             </div>
         </div>
-
     </div>
+
+    <div class="border"></div>
+    <h3 class="mobile__achievements-header"><?= $block->escapeHtml(__('Your Achievements')) ?></h3>
+
     <div class="promotion__achievements">
         <div class="promotion__earned">
-            <div class="dollar"><?php echo $dolla; ?> $</div>
+            <div class="dollar"><?= $dolla; ?> $</div>
             <div class="earned"><?= $block->escapeHtml(__('Earned')) ?></div>
         </div>
         <div class="promotion__counter">
-            <p><?= $block->escapeHtml(__('Your Achievements')) ?></p>
+            <p class="promotion__counter-header"><?= $block->escapeHtml(__('Your Achievements')) ?></p>
             <div class="clicks">
                 <ul class="clicks__counter">
                     <li class="click"><?= $block->escapeHtml(__('Referral Link CLicks')) ?></li>
@@ -45,9 +57,9 @@ $refApproved = 0;
                     <li class="click"><?= $block->escapeHtml(__('Referral Approved')) ?></li>
                 </ul>
                 <ul class="clicks__counter">
-                    <li class="click"><?php echo $refLinkClick; ?></li>
-                    <li class="click"><?php echo $refPending; ?></li>
-                    <li class="click"><?php echo $refApproved; ?></li>
+                    <li class="click"><?= $refLinkClick; ?></li>
+                    <li class="click"><?= $refPending; ?></li>
+                    <li class="click"><?= $refApproved; ?></li>
                 </ul>
             </div>
         </div>
