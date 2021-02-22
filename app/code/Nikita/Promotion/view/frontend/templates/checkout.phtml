@@ -16,7 +16,7 @@
     <a class="checkout__info" href="http://neekeetah.test/promotion/promo/view/">
         <div class="checkout__header">
             <h4 class="checkout__actualheader"><?= $block->escapeHtml(__('Invite friends, get rewards!')) ?></h4>
-            <img class="chevronright" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Ic_chevron_right_48px.svg/768px-Ic_chevron_right_48px.svg.png" alt="goRight"/>
+            <img class="chevronright" src="<?= $block->getViewFileUrl('Nikita_Promotion::images/chevron-right-solid.svg') ?>" alt="goRight"/>
         </div>
         <div class="checkout__descr">
             <p><?= $block->escapeHtml(__('100$ Store Credit for you, 100$ Store Credit for your friend. Tell your friends to enter your coupon checkout and they will receive 30% off their first purchase.')) ?></p>
@@ -26,7 +26,7 @@
     <a class="checkout__info mobile" href="http://neekeetah.test/promotion/promo/view/">
         <div class="checkout__header">
             <h4 class="checkout__actualheader"><?= $block->escapeHtml(__('Invite friends, get rewards!')) ?></h4>
-            <img class="chevronright" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Ic_chevron_right_48px.svg/768px-Ic_chevron_right_48px.svg.png" alt="goRight"/>
+            <img class="chevronright" src="<?= $block->getViewFileUrl('Nikita_Promotion::images/chevron-right-solid.svg') ?>" alt="goRight"/>
         </div>
         <div class="checkout__descr">
             <p><?= $block->escapeHtml(__("Introduce a friend and You'll get 30 $ in Store Credit to spend and they get 100 $ off")) ?></p>
