@@ -18,6 +18,7 @@
   }
 
   &__input {
+    position: relative;
     display: flex;
     margin-top: 15px;
     justify-content: space-between;
@@ -37,6 +38,22 @@
     #formCopy {
       #formGenerate();
       display: none;
+    }
+    .copytoclipboard {
+      position: absolute;
+      top: -42px;
+      display: none;
+      line-height: 27px;
+      border-radius: 10px;
+      right: 80px;
+      width: 125px;
+      height: 30px;
+      font-size: 10px;
+      font-weight: 300;
+      border: 1px solid lightslategrey;
+      background-color: lightgreen;
+      color: black;
+      text-align: center;
     }
   }
 

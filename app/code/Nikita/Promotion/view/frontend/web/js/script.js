@@ -14,6 +14,12 @@ define(function () {
     function copyUniqueUrl() {
         formInput.select()
         document.execCommand('copy')
+
+        document.querySelector('.copytoclipboard').style.display = 'block'
+
+        setTimeout(function() {
+            document.querySelector('.copytoclipboard').style.display = 'none'
+        }, 5000)
     }
 
     function generateUrl() {
